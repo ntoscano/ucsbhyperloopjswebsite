@@ -22,3 +22,5 @@ yarn-error.log*
 
 .vs
 slnx.sqlite
+
+package-lock.json

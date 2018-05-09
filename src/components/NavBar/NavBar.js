@@ -15,7 +15,7 @@ class NavBar extends Component{
     render() {
         var myTabs = (
             <Tabs tabItemContainerStyle={{ width: "100%", backgroundColor: "inherit" }} inkBarStyle={{ backgroundColor: "inherit" }}>
-                <Tab className="navbar-tab" label="Pod" href="#pod" />
+                <Tab className="navbar-tab" label="Poooood" href="#pod" />
                 <Tab className="navbar-tab" label="Team" href="#team" />
                 <Tab className="navbar-tab" label="Sponsors" href="#sponsors" />
                 <Tab className="navbar-tab" label="Support Us" href="#supportUs" />
@@ -35,7 +35,7 @@ class NavBar extends Component{
 
         return (
             <AppBar showMenuIconButton={false}
-                title={<a href="#top"><img src="assets/logo-inverted.png" height = "50px"/> </a>}
+                title={<a href="#top"><img src="assets/logo.png" height = "60px"/> </a>}
                 iconElementRight={
                     <div>
                         <MediaQuery query="(min-width: 610px)">
@@ -47,7 +47,7 @@ class NavBar extends Component{
                     </div>
                 }
                 
-                style={{ position: "fixed", backgroundColor: "#18335d" }}>
+                style={{ position: "fixed", backgroundColor: "rgb(35,31,32)" }}>
                 
                 
             </AppBar>

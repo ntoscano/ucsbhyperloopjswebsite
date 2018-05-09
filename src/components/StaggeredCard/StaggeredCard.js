@@ -33,7 +33,7 @@ class StaggeredCard extends Component {
     }
 
     render() {
-        if (this.props.index % 2 == 0) {
+        if (this.props.index % 2 !== 0) {
             return (
                 <div className="staggeredCard">
                     <MediaQuery query="(min-width: 700px)">

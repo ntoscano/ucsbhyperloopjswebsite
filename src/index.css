@@ -8,11 +8,36 @@ body {
     max-height:600px;
 }
 
-.main-body{
+.carouselwrapper{
+  margin-left: 50%;
+  width: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-left: rgb(212, 212, 212);
+  border-left-width: 1px;
+  border-left-style: solid;
+  margin-top: 10%;  
+  margin-bottom: 50px;  
+}
+
+.slogan{
+  width: 100%;
+  height: inherit;
+  padding-top: 6%;
+}
+
+.firstLook{
+  width: 50%;
+  float: left;
+  overflow: hidden;  
+}
+
+.head{
+  overflow: hidden;  
+  height: 500px;
 }
 
 .bigblock {
-  padding-top: 50px;
   margin-left: 0px
 }
 

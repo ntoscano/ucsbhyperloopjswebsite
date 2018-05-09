@@ -18,17 +18,24 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <Carousel showThumbs={false} infiniteLoop={true} id="top">
-          <div>
-            <img  src="assets/ucsbhyp.jpg"/>
+        <div className="head">
+          <div className="firstLook">
+            <img className="slogan" src="assets/slogan.jpg"/>
           </div>
-          <div>
-            <img className="carousel-img" src="assets/podAlone.jpg"/>
+          <div className="carouselwrapper">
+            <Carousel showThumbs={false} infiniteLoop={true}>
+              <div>
+                <img src="assets/ucsbhyp.jpg"/>
+              </div>
+              <div>
+                <img className="carousel-img" src="assets/podAlone.jpg"/>
+              </div>
+              <div>
+                <img className="carousel-img"  src="assets/team2.jpg"/>
+              </div>
+            </Carousel>
           </div>
-          <div>
-            <img className="carousel-img"  src="assets/team2.jpg"/>
-          </div>
-        </Carousel>
+        </div>
         <div className="main-body">
           <div className="bigblock" id="pod">
  

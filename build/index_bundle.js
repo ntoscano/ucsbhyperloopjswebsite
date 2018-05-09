@@ -18848,7 +18848,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var muiTheme = (0, _getMuiTheme2.default)({
   palette: {
-    primary1Color: "rgb(24, 51, 93)"
+    primary1Color: "rgb(35,31,32)"
   }
 });
 
@@ -39020,7 +39020,7 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n\n.carousel{\n    max-height:600px;\n}\n\n.main-body{\n}\n\n.bigblock {\n  padding-top: 50px;\n  margin-left: 0px\n}\n\nheader {\n  height: 100px;\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n\n.carousel{\n    max-height:600px;\n}\n\n.carouselwrapper{\n  margin-left: 50%;\n  width: 40%;\n  padding-left: 5%;\n  padding-right: 5%;\n  border-left: rgb(212, 212, 212);\n  border-left-width: 1px;\n  border-left-style: solid;\n  margin-top: 10%;  \n  margin-bottom: 50px;  \n}\n\n.slogan{\n  width: 100%;\n  height: inherit;\n  padding-top: 6%;\n}\n\n.firstLook{\n  width: 50%;\n  float: left;\n  overflow: hidden;  \n}\n\n.head{\n  overflow: hidden;  \n  height: 500px;\n}\n\n.bigblock {\n  margin-left: 0px\n}\n\nheader {\n  height: 100px;\n}\n", ""]);
 
 // exports
 
@@ -39202,22 +39202,35 @@ var App = function (_Component) {
         null,
         _react2.default.createElement(_NavBar2.default, null),
         _react2.default.createElement(
-          _reactResponsiveCarousel.Carousel,
-          { showThumbs: false, infiniteLoop: true, id: 'top' },
+          'div',
+          { className: 'head' },
           _react2.default.createElement(
             'div',
-            null,
-            _react2.default.createElement('img', { src: 'assets/ucsbhyp.jpg' })
+            { className: 'firstLook' },
+            _react2.default.createElement('img', { className: 'slogan', src: 'assets/slogan.jpg' })
           ),
           _react2.default.createElement(
             'div',
-            null,
-            _react2.default.createElement('img', { className: 'carousel-img', src: 'assets/podAlone.jpg' })
-          ),
-          _react2.default.createElement(
-            'div',
-            null,
-            _react2.default.createElement('img', { className: 'carousel-img', src: 'assets/team2.jpg' })
+            { className: 'carouselwrapper' },
+            _react2.default.createElement(
+              _reactResponsiveCarousel.Carousel,
+              { showThumbs: false, infiniteLoop: true },
+              _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement('img', { src: 'assets/ucsbhyp.jpg' })
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement('img', { className: 'carousel-img', src: 'assets/podAlone.jpg' })
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement('img', { className: 'carousel-img', src: 'assets/team2.jpg' })
+              )
+            )
           )
         ),
         _react2.default.createElement(
@@ -43505,7 +43518,7 @@ var StaggeredCard = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            if (this.props.index % 2 == 0) {
+            if (this.props.index % 2 !== 0) {
                 return _react2.default.createElement(
                     'div',
                     { className: 'staggeredCard' },
@@ -43665,7 +43678,7 @@ var NavBar = function (_Component) {
             var myTabs = _react2.default.createElement(
                 _materialUi.Tabs,
                 { tabItemContainerStyle: { width: "100%", backgroundColor: "inherit" }, inkBarStyle: { backgroundColor: "inherit" } },
-                _react2.default.createElement(_materialUi.Tab, { className: 'navbar-tab', label: 'Pod', href: '#pod' }),
+                _react2.default.createElement(_materialUi.Tab, { className: 'navbar-tab', label: 'Poooood', href: '#pod' }),
                 _react2.default.createElement(_materialUi.Tab, { className: 'navbar-tab', label: 'Team', href: '#team' }),
                 _react2.default.createElement(_materialUi.Tab, { className: 'navbar-tab', label: 'Sponsors', href: '#sponsors' }),
                 _react2.default.createElement(_materialUi.Tab, { className: 'navbar-tab', label: 'Support Us', href: '#supportUs' }),
@@ -43690,7 +43703,7 @@ var NavBar = function (_Component) {
                 title: _react2.default.createElement(
                     'a',
                     { href: '#top' },
-                    _react2.default.createElement('img', { src: 'assets/logo-inverted.png', height: '50px' }),
+                    _react2.default.createElement('img', { src: 'assets/logo.png', height: '60px' }),
                     ' '
                 ),
                 iconElementRight: _react2.default.createElement(
@@ -43712,7 +43725,7 @@ var NavBar = function (_Component) {
                     )
                 ),
 
-                style: { position: "fixed", backgroundColor: "#18335d" } });
+                style: { position: "fixed", backgroundColor: "rgb(35,31,32)" } });
         }
     }]);
 

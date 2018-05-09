@@ -23,15 +23,16 @@ class App extends Component {
             <img className="slogan" src="assets/slogan.jpg"/>
           </div>
           <div className="carouselwrapper">
-            <Carousel showThumbs={false} infiniteLoop={true}>
+            <h3 className="PastClients">Our clients include:</h3>
+            <Carousel	showThumbs={false} infiniteLoop={true}>
+              <div>
+                <img src="assets/ck.png"/>
+              </div>
+              <div>
+                <img  src="assets/MA.jpg"/>
+              </div>
               <div>
                 <img src="assets/ucsbhyp.jpg"/>
-              </div>
-              <div>
-                <img className="carousel-img" src="assets/podAlone.jpg"/>
-              </div>
-              <div>
-                <img className="carousel-img"  src="assets/team2.jpg"/>
               </div>
             </Carousel>
           </div>

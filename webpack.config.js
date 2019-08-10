@@ -22,6 +22,10 @@ module.exports = {
         test: /\.(jpe?g|png|gif|svg|ico|webp)$/,
         loader: "url-loader",
         options: { name: "/images/[name]-[hash].[ext]" }
+      },
+      {    
+        test: /\.(woff|woff2|eot|ttf|otf|txt)$/,
+        loader: "file-loader"
       }
     ]
   },

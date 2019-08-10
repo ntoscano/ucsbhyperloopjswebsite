@@ -15,27 +15,23 @@ class NavBar extends Component{
     render() {
         var myTabs = (
             <Tabs tabItemContainerStyle={{ width: "100%", backgroundColor: "inherit" }} inkBarStyle={{ backgroundColor: "inherit" }}>
-                <Tab className="navbar-tab" label="Pod" href="#pod" />
-                <Tab className="navbar-tab" label="Team" href="#team" />
-                <Tab className="navbar-tab" label="Sponsors" href="#sponsors" />
-                <Tab className="navbar-tab" label="Support Us" href="#supportUs" />
-                <Tab className="navbar-tab" label="Gallery" href="#gallery" />
+                <Tab className="navbar-tab" label="Who Are We" href="#us" />
+                <Tab className="navbar-tab" label="Cleints" href="#clients" />
+                <Tab className="navbar-tab" label="Contact Us" href="#contact" />
             </Tabs>
         );
         var iconTabs = (
             <IconMenu iconButtonElement={<IconButton><MoreHorizIcon color="white" /> </IconButton>}>
-                <MenuItem primaryText="Pod" href="#pod" />
-                <MenuItem primaryText="Team" href="#team" />
-                <MenuItem primaryText="Sponsors" href="#sponsors" />
-                <MenuItem primaryText="Support Us" href="#supportUs" />
-                <MenuItem primaryText="Gallery" href="#gallery" />
+                <MenuItem primaryText="Who Are We" href="#us" />
+                <MenuItem primaryText="Clients" href="#clients" />
+                <MenuItem primaryText="Contact Us" href="#contact" />
 
             </IconMenu>
         );
 
         return (
             <AppBar showMenuIconButton={false}
-                title={<a href="#top"><img src="assets/logo-inverted.png" height = "50px"/> </a>}
+                title={<a href="#top"><img src="assets/logo.png" height = "60px"/> </a>}
                 iconElementRight={
                     <div>
                         <MediaQuery query="(min-width: 610px)">
@@ -47,7 +43,7 @@ class NavBar extends Component{
                     </div>
                 }
                 
-                style={{ position: "fixed", backgroundColor: "#18335d" }}>
+                style={{ position: "fixed", backgroundColor: "rgb(35,31,32)" }}>
                 
                 
             </AppBar>
